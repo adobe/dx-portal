@@ -1,7 +1,5 @@
-# Digital Experience Portal created using Milo college template
-Portal development page: https://main--dx-portal--srshrm.hlx.page/
-
-Used this project template to create the Milo site.
+# Adobe Digital Experience Portal created using Milo college template
+DX Portal links: [Page](https://main--dx-portal--adobe.hlx.page) and [Live](https://main--dx-portal--adobe.hlx.live).
 
 ## Steps
 
