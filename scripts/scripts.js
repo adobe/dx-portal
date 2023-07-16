@@ -58,8 +58,25 @@ const miloLibs = setLibs(LIBS);
 }());
 
 (async function loadPage() {
-  const { loadArea, setConfig } = await import(`${miloLibs}/utils/utils.js`);
-
+  const { loadArea, setConfig} = await import(`${miloLibs}/utils/utils.js`);
   setConfig({ ...CONFIG, miloLibs });
   await loadArea();
 }());
+
+export function initHlx() {
+  window.hlx = window.hlx || {};
+  window.hlx.lighthouse = new URLSearchParams(window.location.search).get('lighthouse') === 'on';
+  window.hlx.codeBasePath = '';
+
+  const scriptEl = document.querySelector('script[src$="/scripts/scripts.js"]');
+  if (scriptEl) {
+    try {
+      [window.hlx.codeBasePath] = new URL(scriptEl.src).pathname.split('/scripts/scripts.js');
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.log(e);
+    }
+  }
+}
+
+initHlx();
