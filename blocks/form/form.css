@@ -40,6 +40,11 @@
   cursor: pointer;
 }
 
+.form textarea {
+  width : 100%;
+  height : 100%;
+}
+
 .form button:hover {
   background-color: #45a049;
 }
