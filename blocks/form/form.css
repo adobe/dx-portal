@@ -14,7 +14,8 @@
 }
 
 .form input,
-.form select {
+.form select,
+.form textarea {
   width: 100%;
   padding: 8px;
   margin-bottom: 15px;
@@ -38,10 +39,6 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
-}
-
-.form textarea {
-  width : 103%;
 }
 
 .form button:hover {
