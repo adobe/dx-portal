@@ -6,3 +6,7 @@
  * 
  *
  */
+
+ .quote blockquote .quote-copy {
+    font-weight: lighter;
+ }
