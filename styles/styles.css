@@ -8,5 +8,5 @@
  */
 
  .quote blockquote .quote-copy {
-    font-weight: lighter;
+    font-weight: lighter !important;
  }
