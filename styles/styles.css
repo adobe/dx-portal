@@ -7,6 +7,6 @@
  *
  */
 
- .quote blockquote .quote-copy {
-    font-weight: lighter !important;
+ .quote .light-weight blockquote .quote-copy {
+    font-weight: lighter;
  }
