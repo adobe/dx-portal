@@ -1,5 +1,7 @@
 .*
 *.md
 LICENSE
+package.json
+package-lock.json
 test/*
 !tools/sidekick/config.json
